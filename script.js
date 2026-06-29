@@ -534,3 +534,9 @@ document.querySelectorAll('.gallery-item').forEach(item => {
     if (e.key === 'Enter' || e.key === ' ') openLightbox(item);
   });
 });
+// Background Music
+const music = document.getElementById("bgMusic");
+
+document.addEventListener("click", () => {
+    music.play().catch(err => console.log("Music blocked:", err));
+}, { once: true });

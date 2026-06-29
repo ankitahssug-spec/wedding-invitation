@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="You are cordially invited to the wedding of Arjun & Priya — A celebration of love, laughter, and forever." />
+  <meta name="keywords" content="wedding invitation, Arjun Priya wedding, wedding 2025" />
+  <title>Arjun & Priya — Wedding Invitation</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+<body>
+
+  <!-- ════════════════════════════════
+       SCROLL PROGRESS BAR
+  ════════════════════════════════ -->
+  <div id="scrollProgress"></div>
+
+  <!-- ════════════════════════════════
+       SECTION 1 — LOADING SCREEN
+  ════════════════════════════════ -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-monogram">A <span>&</span> P</div>
+      <p class="loader-tagline">A celebration of love</p>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+      <p class="loader-percent" id="loaderPercent">0%</p>
+    </div>
+    <div class="petal-rain" id="petalRain"></div>
+  </div>
+
+  <!-- ════════════════════════════════
+       SECTION 2 — HERO
+  ════════════════════════════════ -->
+  <section id="hero">
+    <!-- Slideshow background -->
+    <div class="hero-slides">
+      <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1519741497674-611481863552?w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1529636798458-92182e662485?w=1600&q=80')"></div>
+      <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=1600&q=80')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <!-- Floating petals -->
+    <div class="floating-petals" id="floatingPetals"></div>
+    <!-- Sparkles -->
+    <div class="sparkles" id="sparkles"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-aos="fade-down" data-aos-delay="200">Together with their families</p>
+      <h1 class="hero-names" data-aos="zoom-in" data-aos-delay="400">
+        <span class="name-bride">Arjun</span>
+        <span class="hero-ampersand">&</span>
+        <span class="name-groom">Priya</span>
+      </h1>
+      <div class="hero-divider" data-aos="fade-up" data-aos-delay="600">
+        <span class="line"></span><span class="diamond">◆</span><span class="line"></span>
+      </div>
+      <p class="hero-date" data-aos="fade-up" data-aos-delay="700">Saturday, 14 February 2026</p>
+      <p class="hero-quote" data-aos="fade-up" data-aos-delay="900">
+        <em>"Two souls, one heart — a love story written in the stars."</em>
+      </p>
+      <a href="#invitation" class="btn-open" data-aos="fade-up" data-aos-delay="1100">
+        <span>Open Invitation</span>
+        <i class="fa-solid fa-envelope-open"></i>
+      </a>
+    </div>
+
+    <!-- Music control -->
+    <button class="music-btn" id="musicBtn" title="Toggle Music">
+      <i class="fa-solid fa-music" id="musicIcon"></i>
+    </button>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint"><span></span></div>
+  </section>
+
+  <!-- ════════════════════════════════
+       SECTION 3 — INVITATION CARD
+  ════════════════════════════════ -->
+  <section id="invitation" class="section-pad">
+    <div class="container">
+      <div class="glass-card invite-card" data-aos="zoom-in">
+        <div class="invite-border"></div>
+        <div class="section-eyebrow">With the blessings of</div>
+        <div class="parents-grid">
+          <div>
+            <p class="parent-label">Bride's Parents</p>
+            <p class="parent-name">Mr. Ramesh Sharma & Mrs. Sunita Sharma</p>
+          </div>
+          <div class="parents-divider"><i class="fa-solid fa-heart"></i></div>
+          <div>
+            <p class="parent-label">Groom's Parents</p>
+            <p class="parent-name">Mr. Vikram Mehta & Mrs. Kavita Mehta</p>
+          </div>
+        </div>
+        <div class="invite-message">
+          <h2 class="script-heading">You are Invited</h2>
+          <p>We joyfully request the honour of your presence as we exchange our vows and begin this beautiful journey together. Your love and blessings mean the world to us.</p>
+        </div>
+        <div class="couple-details">
+          <div class="couple-detail" data-aos="fade-right" data-aos-delay="100">
+            <div class="couple-photo-wrap">
+              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&q=80" alt="Priya Sharma" loading="lazy" />
+            </div>
+            <h3 class="script-heading">Priya Sharma</h3>
+            <p>Daughter of Mr. Ramesh & Mrs. Sunita Sharma</p>
+            <p class="couple-tag">Software Engineer · Mumbai</p>
+          </div>
+          <div class="couple-and"><span class="script-heading">&</span></div>
+          <div class="couple-detail" data-aos="fade-left" data-aos-delay="100">
+            <div class="couple-photo-wrap">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&q=80" alt="Arjun Mehta" loading="lazy" />
+            </div>
+            <h3 class="script-heading">Arjun Mehta</h3>
+            <p>Son of Mr. Vikram & Mrs. Kavita Mehta</p>
+            <p class="couple-tag">Architect · Pune</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       SECTION 4 — SAVE THE DATE
+  ════════════════════════════════ -->
+  <section id="savedate" class="section-pad bg-cream">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="section-eyebrow">Mark Your Calendar</span>
+        <h2 class="script-heading">Save The Date</h2>
+      </div>
+      <div class="savedate-grid">
+        <div class="glass-card savedate-card" data-aos="fade-up" data-aos-delay="100">
+          <i class="fa-regular fa-calendar-days savedate-icon"></i>
+          <p class="savedate-label">Date</p>
+          <p class="savedate-val">Saturday, 14 February 2026</p>
+        </div>
+        <div class="glass-card savedate-card" data-aos="fade-up" data-aos-delay="200">
+          <i class="fa-regular fa-clock savedate-icon"></i>
+          <p class="savedate-label">Time</p>
+          <p class="savedate-val">7:00 PM onwards</p>
+        </div>
+        <div class="glass-card savedate-card" data-aos="fade-up" data-aos-delay="300">
+          <i class="fa-solid fa-location-dot savedate-icon"></i>
+          <p class="savedate-label">Venue</p>
+          <p class="savedate-val">The Grand Palace, Juhu, Mumbai</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       SECTION 5 — COUNTDOWN
+  ════════════════════════════════ -->
+  <section id="countdown" class="section-pad">
+    <div class="countdown-bg" style="background-image:url('https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=1400&q=80')"></div>
+    <div class="countdown-overlay"></div>
+    <div class="container" style="position:relative;z-index:2">
+      <div class="section-title light" data-aos="fade-up">
+        <span class="section-eyebrow">Counting Down To</span>
+        <h2 class="script-heading">Our Special Day</h2>
+      </div>
+      <div class="countdown-grid" data-aos="zoom-in" data-aos-delay="200">
+        <div class="countdown-unit">
+          <span class="count-num" id="cd-days">00</span>
+          <span class="count-label">Days</span>
+        </div>
+        <div class="count-sep">:</div>
+        <div class="countdown-unit">
+          <span class="count-num" id="cd-hours">00</span>
+          <span class="count-label">Hours</span>
+        </div>
+        <div class="count-sep">:</div>
+        <div class="countdown-unit">
+          <span class="count-num" id="cd-mins">00</span>
+          <span class="count-label">Minutes</span>
+        </div>
+        <div class="count-sep">:</div>
+        <div class="countdown-unit">
+          <span class="count-num" id="cd-secs">00</span>
+          <span class="count-label">Seconds</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       SECTION 6 — OUR STORY
+  ════════════════════════════════ -->
+  <section id="story" class="section-pad bg-cream">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="section-eyebrow">How It All Began</span>
+        <h2 class="script-heading">Our Story</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item left" data-aos="fade-right">
+          <div class="timeline-dot"><i class="fa-solid fa-heart"></i></div>
+          <div class="glass-card timeline-card">
+            <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=500&q=80" alt="First Meet" loading="lazy" />
+            <div class="timeline-content">
+              <span class="timeline-year">March 2021</span>
+              <h3>We First Met</h3>
+              <p>A chance encounter at a rooftop café in Bandra — Arjun asked if the seat was taken, and Priya said yes, just for him.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item right" data-aos="fade-left">
+          <div class="timeline-dot"><i class="fa-solid fa-ring"></i></div>
+          <div class="glass-card timeline-card">
+            <img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=500&q=80" alt="Proposal" loading="lazy" />
+            <div class="timeline-content">
+              <span class="timeline-year">December 2022</span>
+              <h3>The Proposal</h3>
+              <p>Under a canopy of fairy lights at Marine Drive, Arjun got down on one knee and Priya said the most beautiful yes.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item left" data-aos="fade-right">
+          <div class="timeline-dot"><i class="fa-solid fa-star"></i></div>
+          <div class="glass-card timeline-card">
+            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=500&q=80" alt="Engagement" loading="lazy" />
+            <div class="timeline-content">
+              <span class="timeline-year">February 2024</span>
+              <h3>Engagement</h3>
+              <p>Surrounded by both families and closest friends, we exchanged rings and promised forever in our hearts.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item right" data-aos="fade-left">
+          <div class="timeline-dot"><i class="fa-solid fa-church"></i></div>
+          <div class="glass-card timeline-card">
+            <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=500&q=80" alt="Wedding" loading="lazy" />
+            <div class="timeline-content">
+              <span class="timeline-year">February 2026</span>
+              <h3>The Wedding</h3>
+              <p>And now, we invite you to be part of the next chapter — the most beautiful one yet.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       SECTION 7 — BRIDE & GROOM
+  ════════════════════════════════ -->
+  <section id="couple" class="section-pad">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="section-eyebrow">The Happy Couple</span>
+        <h2 class="script-heading">Bride & Groom</h2>
+      </div>
+      <div class="couple-profiles">
+        <div class="profile-card glass-card" data-aos="fade-right">
+          <div class="profile-photo-ring">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80" alt="Priya Sharma" loading="lazy" />
+          </div>
+          <h3 class="script-heading">Priya Sharma</h3>
+          <p class="profile-role">The Bride</p>
+          <p class="profile-bio">A passionate software engineer who codes by day and reads poetry by night. Priya's warmth and laughter light up every room she enters.</p>
+          <div class="profile-socials">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="profile-hearts" data-aos="zoom-in">
+          <div class="script-heading beating-heart">❤</div>
+        </div>
+        <div class="profile-card glass-card" data-aos="fade-left">
+          <div class="profile-photo-ring">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80" alt="Arjun Mehta" loading="lazy" />
+          </div>
+          <h3 class="script-heading">Arjun Mehta</h3>
+          <p class="profile-role">The Groom</p>
+          <p class="profile-bio">An architect who sees beauty in structures and in people. Arjun's calm confidence and quiet humour have been Priya's safe harbour since day one.</p>
+          <div class="profile-socials">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       SECTION 8 — EVENTS
+  ════════════════════════════════ -->
+  <section id="events" class="section-pad bg-cream">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="section-eyebrow">Join Us For</span>
+        <h2 class="script-heading">Wedding Events</h2>
+      </div>
+      <div class="events-grid">
+
+        <div class="glass-card event-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="event-img-wrap">
+            <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=500&q=80" alt="Haldi" loading="lazy" />
+            <span class="event-badge">Haldi</span>
+          </div>
+          <div class="event-body">
+            <p class="event-meta"><i class="fa-regular fa-calendar"></i> 11 Feb 2026</p>
+            <p class="event-meta"><i class="fa-regular fa-clock"></i> 10:00 AM</p>
+            <p class="event-meta"><i class="fa-solid fa-location-dot"></i> Sharma Residence, Andheri</p>
+            <a href="https://maps.google.com" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> View Map</a>
+          </div>
+        </div>
+
+        <div class="glass-card event-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="event-img-wrap">
+            <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=500&q=80" alt="Mehendi" loading="lazy" />
+            <span class="event-badge">Mehendi</span>
+          </div>
+          <div class="event-body">
+            <p class="event-meta"><i class="fa-regular fa-calendar"></i> 12 Feb 2026</p>
+            <p class="event-meta"><i class="fa-regular fa-clock"></i> 4:00 PM</p>
+            <p class="event-meta"><i class="fa-solid fa-location-dot"></i> Royal Garden, Juhu</p>
+            <a href="https://maps.google.com" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> View Map</a>
+          </div>
+        </div>
+
+        <div class="glass-card event-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="event-img-wrap">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=500&q=80" alt="Sangeet" loading="lazy" />
+            <span class="event-badge">Sangeet</span>
+          </div>
+          <div class="event-body">
+            <p class="event-meta"><i class="fa-regular fa-calendar"></i> 13 Feb 2026</p>
+            <p class="event-meta"><i class="fa-regular fa-clock"></i> 7:00 PM</p>
+            <p class="event-meta"><i class="fa-solid fa-location-dot"></i> The Grand Ballroom, Juhu</p>
+            <a href="https://maps.google.com" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> View Map</a>
+          </div>
+        </div>
+
+        <div class="glass-card event-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="event-img-wrap">
+            <img src="https://images.unsplash.com/photo-1529636798458-92182e662485?w=500&q=80" alt="Wedding" loading="lazy" />
+            <span class="event-badge primary">Wedding</span>
+          </div>
+          <div class="event-body">
+            <p class="event-meta"><i class="fa-regular fa-calendar"></i> 14 Feb 2026</p>
+            <p class="event-meta"><i class="fa-regular fa-clock"></i> 7:00 PM</p>
+            <p class="event-meta"><i class="fa-solid fa-location-dot"></i> The Grand Palace, Juhu</p>
+            <a href="https://maps.google.com" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> View Map</a>
+          </div>
+        </div>
+
+        <div class="glass-card event-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="event-img-wrap">
+            <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=500&q=80" alt="Reception" loading="lazy" />
+            <span class="event-badge">Reception</span>
+          </div>
+          <div class="event-body">
+            <p class="event-meta"><i class="fa-regular fa-calendar"></i> 15 Feb 2026</p>
+            <p class="event-meta"><i class="fa-regular fa-clock"></i> 7:00 PM</p>
+            <p class="event-meta"><i class="fa-solid fa-location-dot"></i> The Grand Palace, Juhu</p>
+            <a href="https://maps.google.com" target="_blank" class="btn-map"><i class="fa-solid fa-map-location-dot"></i> View Map</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       SECTION 9 — GALLERY
+  ════════════════════════════════ -->
+  <section id="gallery" class="section-pad">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="section-eyebrow">Moments We Cherish</span>
+        <h2 class="script-heading">Our Gallery</h2>
+      </div>
+      <div class="masonry-gallery" data-aos="fade-up" data-aos-delay="100">
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80" alt="Wedding 1" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item tall" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1529636798458-92182e662485?w=600&q=80" alt="Wedding 2" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&q=80" alt="Wedding 3" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&q=80" alt="Wedding 4" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item tall" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=600&q=80" alt="Wedding 5" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox(this)">
+          <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=600&q=80" alt="Wedding 6" loading="lazy" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()"><i class="fa-solid fa-xmark"></i></button>
+    <img id="lightboxImg" src="" alt="Gallery" />
+  </div>
+
+  <!-- ════════════════════════════════
+       SECTION 10 — VENUE
+  ════════════════════════════════ -->
+  <section id="venue" class="section-pad bg-cream">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="section-eyebrow">Where To Find Us</span>
+        <h2 class="script-heading">Wedding Venue</h2>
+      </div>
+      <div class="venue-wrap" data-aos="fade-up" data-aos-delay="100">
+        <div class="glass-card venue-info">
+          <i class="fa-solid fa-building-columns venue-icon"></i>
+          <h3>The Grand Palace</h3>
+          <p>Juhu Scheme, Near Juhu Beach,<br />Mumbai, Maharashtra 400049</p>
+          <div class="venue-btns">
+            <a href="https://maps.google.com/?q=The+Grand+Palace+Juhu+Mumbai" target="_blank" class="btn-gold">
+              <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+            </a>
+            <button class="btn-outline" onclick="copyAddress()">
+              <i class="fa-regular fa-copy"></i> <span id="copyBtnText">Copy Address</span>
+            </button>
+          </div>
+        </div>
+        <div class="venue-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.0476609766835!2d72.82771241490158!3d19.10101985503671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9c676018b43%3A0x75f29a4205098f99!2sJuhu%20Beach%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+            width="100%" height="350" style="border:0; border-radius:16px;" allowfullscreen="" loading="lazy"
+            title="Wedding Venue Map">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       SECTION 11 — RSVP
+  ════════════════════════════════ -->
+  <section id="rsvp" class="section-pad">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="section-eyebrow">Kindly Respond By Jan 31</span>
+        <h2 class="script-heading">RSVP</h2>
+      </div>
+      <div class="glass-card rsvp-card" data-aos="zoom-in" data-aos-delay="100">
+        <div id="rsvpForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name <span class="req">*</span></label>
+              <input type="text" id="rsvpName" placeholder="Full Name" />
+            </div>
+            <div class="form-group">
+              <label>Phone Number <span class="req">*</span></label>
+              <input type="tel" id="rsvpPhone" placeholder="+91 XXXXXXXXXX" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Number of Guests</label>
+              <select id="rsvpGuests">
+                <option value="1">Just Me</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5+">5+ Guests</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Attendance <span class="req">*</span></label>
+              <select id="rsvpAttend">
+                <option value="">Select...</option>
+                <option value="yes">Joyfully Attending ✓</option>
+                <option value="no">Regretfully Declining</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Your Message</label>
+            <textarea id="rsvpMsg" rows="3" placeholder="Share your wishes or any message for the couple..."></textarea>
+          </div>
+          <p class="form-error" id="formError"></p>
+          <button class="btn-gold full-width" onclick="submitRSVP()">
+            <i class="fa-solid fa-paper-plane"></i> Send RSVP
+          </button>
+        </div>
+        <div id="rsvpSuccess" class="rsvp-success hidden">
+          <div class="success-anim">
+            <i class="fa-solid fa-circle-check"></i>
+            <h3 class="script-heading">Thank You!</h3>
+            <p>Your RSVP has been received. We can't wait to celebrate with you! 🎉</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       SECTION 12 — GIFTS
+  ════════════════════════════════ -->
+  <section id="gifts" class="section-pad bg-cream">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="section-eyebrow">Bless The Couple</span>
+        <h2 class="script-heading">Gift Registry</h2>
+      </div>
+      <div class="gifts-grid">
+        <div class="glass-card gift-card" data-aos="fade-right">
+          <h3><i class="fa-solid fa-qrcode"></i> UPI Payment</h3>
+          <div class="qr-placeholder">
+            <div class="qr-mock">
+              <div class="qr-inner">
+                <i class="fa-brands fa-google-pay" style="font-size:3rem; color:#4285f4;"></i>
+                <p>Scan to Pay</p>
+              </div>
+            </div>
+          </div>
+          <p class="upi-id">arjun.priya@okicici</p>
+          <button class="btn-outline" onclick="copyUPI()">
+            <i class="fa-regular fa-copy"></i> <span id="upiCopyText">Copy UPI ID</span>
+          </button>
+        </div>
+        <div class="glass-card gift-card" data-aos="fade-left">
+          <h3><i class="fa-solid fa-building-columns"></i> Bank Transfer</h3>
+          <div class="bank-detail">
+            <span>Account Name</span>
+            <strong>Arjun Mehta</strong>
+          </div>
+          <div class="bank-detail">
+            <span>Account No.</span>
+            <strong>XXXX XXXX 1234</strong>
+          </div>
+          <div class="bank-detail">
+            <span>IFSC Code</span>
+            <strong>ICIC0001234</strong>
+          </div>
+          <div class="bank-detail">
+            <span>Bank</span>
+            <strong>ICICI Bank, Mumbai</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       SECTION 13 — FAMILY
+  ════════════════════════════════ -->
+  <section id="family" class="section-pad">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="section-eyebrow">The Ones Who Made Us</span>
+        <h2 class="script-heading">Our Families</h2>
+      </div>
+      <div class="family-sides">
+        <div data-aos="fade-right">
+          <h3 class="family-heading script-heading">Bride's Family</h3>
+          <div class="family-grid">
+            <div class="glass-card family-card">
+              <div class="family-avatar"><i class="fa-solid fa-person"></i></div>
+              <p class="family-name">Mr. Ramesh Sharma</p>
+              <p class="family-rel">Father of the Bride</p>
+            </div>
+            <div class="glass-card family-card">
+              <div class="family-avatar female"><i class="fa-solid fa-person-dress"></i></div>
+              <p class="family-name">Mrs. Sunita Sharma</p>
+              <p class="family-rel">Mother of the Bride</p>
+            </div>
+            <div class="glass-card family-card">
+              <div class="family-avatar"><i class="fa-solid fa-person"></i></div>
+              <p class="family-name">Rahul Sharma</p>
+              <p class="family-rel">Brother of the Bride</p>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left">
+          <h3 class="family-heading script-heading">Groom's Family</h3>
+          <div class="family-grid">
+            <div class="glass-card family-card">
+              <div class="family-avatar"><i class="fa-solid fa-person"></i></div>
+              <p class="family-name">Mr. Vikram Mehta</p>
+              <p class="family-rel">Father of the Groom</p>
+            </div>
+            <div class="glass-card family-card">
+              <div class="family-avatar female"><i class="fa-solid fa-person-dress"></i></div>
+              <p class="family-name">Mrs. Kavita Mehta</p>
+              <p class="family-rel">Mother of the Groom</p>
+            </div>
+            <div class="glass-card family-card">
+              <div class="family-avatar female"><i class="fa-solid fa-person-dress"></i></div>
+              <p class="family-name">Neha Mehta</p>
+              <p class="family-rel">Sister of the Groom</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       SECTION 14 — WISHES
+  ════════════════════════════════ -->
+  <section id="wishes" class="section-pad bg-cream">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <span class="section-eyebrow">Words of Love</span>
+        <h2 class="script-heading">Wedding Wishes</h2>
+      </div>
+      <div class="wishes-marquee-wrap" data-aos="fade-up">
+        <div class="wishes-marquee">
+          <div class="marquee-track" id="marqueeTrack">
+            <div class="wish-bubble">"Wishing you both a lifetime of happiness and togetherness! — Ananya & Rohit"</div>
+            <div class="wish-bubble">"May your love story be the most beautiful chapter yet! — The Kapoors"</div>
+            <div class="wish-bubble">"Here's to laughter, adventure, and a love that only grows stronger. — Suresh Uncle"</div>
+            <div class="wish-bubble">"Two hearts, one beautiful journey. Congratulations! — Priya's College Friends"</div>
+            <div class="wish-bubble">"So proud of you both. Love you to the moon and back! — Neha Didi"</div>
+            <div class="wish-bubble">"Wishing you endless joy, peace and love. — The Shahs"</div>
+          </div>
+        </div>
+      </div>
+      <div class="wish-form" data-aos="zoom-in" data-aos-delay="200">
+        <input type="text" id="wishInput" placeholder="Leave your wish for the couple..." />
+        <button class="btn-gold" onclick="addWish()"><i class="fa-solid fa-heart"></i> Send Wish</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       SECTION 15 — FOOTER
+  ════════════════════════════════ -->
+  <footer id="footer">
+    <div class="footer-flowers"></div>
+    <div class="container footer-inner">
+      <div class="footer-monogram script-heading">A & P</div>
+      <p class="footer-date">14 · 02 · 2026</p>
+      <p class="footer-msg">Thank you for being part of our love story.<br />Your presence is the greatest gift.</p>
+      <div class="footer-actions">
+        <button class="footer-btn" onclick="shareInvitation()">
+          <i class="fa-solid fa-share-nodes"></i><span>Share</span>
+        </button>
+        <a class="footer-btn" href="tel:+919876543210">
+          <i class="fa-solid fa-phone"></i><span>Call</span>
+        </a>
+        <a class="footer-btn" href="https://wa.me/919876543210?text=Congratulations%20Arjun%20and%20Priya!" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span>
+        </a>
+        <a class="footer-btn" href="https://instagram.com" target="_blank">
+          <i class="fa-brands fa-instagram"></i><span>Instagram</span>
+        </a>
+      </div>
+      <p class="footer-credit">Made with <i class="fa-solid fa-heart" style="color:#c9a86c;"></i> for Arjun & Priya</p>
+    </div>
+  </footer>
+
+  <!-- ════════════════════════════════
+       FLOATING BUTTONS
+  ════════════════════════════════ -->
+  <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Confetti canvas -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- Hidden audio -->
+  <audio id="bgMusic" loop>
+    <source src="assets/music/wedding.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- ════ SCRIPTS ════ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
