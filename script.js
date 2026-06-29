@@ -241,6 +241,18 @@ function initMusic() {
 
   // Attempt after loader completes
   setTimeout(tryAutoplay, 2500);
+  // Start music on first user interaction
+document.addEventListener("click", function startMusic() {
+  audio.volume = 0.35;
+
+  audio.play().then(() => {
+    playing = true;
+    icon.className = "fa-solid fa-pause";
+    btn.classList.add("playing");
+  }).catch(console.error);
+
+  document.removeEventListener("click", startMusic);
+});
 
   btn.addEventListener('click', () => {
     if (playing) {
